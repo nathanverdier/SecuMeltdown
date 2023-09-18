@@ -9,7 +9,7 @@ Meltdown est une vulnérabilité matérielle découverte exclusivement dans les 
 
 Elle permettre donc à un attaquant d'éxécution d'un code spécial de bas niveau appelé « code noyau », qui s'exécute notamment au cours d'un processus connu sous le nom d'exécution spéculative (du code est exécuté avant que l'on soit sûr d'en vouloir car c'est le code le plus "probable" d'être exécuté, ce qui permet d'éviter les contrôles de sécurité)
 
-* Cette exécution spéculative inappropriée crée une vulnérabilité du processeur qu'un attaquant peut exploiter pour accéder à des données très sensibles stockées dans la mémoire du noyau, telles que des mots de passe, des clés de chiffrement, des photographies personnelles, des e-mails, etc.
+Cette exécution spéculative inappropriée crée une vulnérabilité du processeur qu'un attaquant peut exploiter pour accéder à des données très sensibles stockées dans la mémoire du noyau, telles que des mots de passe, des clés de chiffrement, des photographies personnelles, des e-mails, etc.
 
 **Voici ce que nous dit sa CVE (CVE-2017-5754):**
 Les systèmes dotés de microprocesseurs utilisant l'exécution spéculative et la prédiction de branchement indirecte peuvent permettre la divulgation non autorisée d'informations à un attaquant disposant d'un accès utilisateur local via une analyse par canal secondaire du cache de données.
@@ -34,4 +34,6 @@ Pour faire l'attaque sur un système linux:
 désactiver le correctif nommée Kernel *Page Table Isolation* lors de l'armosage en passant le code pti=off sur la ligne de commande du noyau.
 
 ### L'attaque ![Attaque](Images/AttaqueIcon.png)
+
+**Maintenant la prattique:**
 
