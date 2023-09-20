@@ -5,7 +5,7 @@ geometry: margin=2cm
 output: pdf_document
 ---
 
-![meldown](Images/Meltdown_icon.png)
+![<img src="Images/Meltdown_icon.png" width="50"/>](Images/Meltdown_icon.png)
 
 ## Qu’est-ce que c'est une attaque Meltdown
 
@@ -45,9 +45,3 @@ désactiver le correctif nommé Kernel *Page Table Isolation* lors de l'armosage
 **Maintenant la prattique:**
 
 
-
-<style type="text/css">
-  img{
-    width: 50px;
-  }
-</style>
