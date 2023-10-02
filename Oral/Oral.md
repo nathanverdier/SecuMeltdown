@@ -7,7 +7,7 @@ output: pdf_document
 
 Meltdown est une vulnérabilité matérielle qui touche les processeurs Intel x86 et qui permet à un processus non autorisé l’accès à la mémoire de l’ordinateur et donc à toutes les informations de son utilisateur.
 Elle a donc été nommée Meltdown, car elle fait fondre les barrières de sécurité qui isolant les données sensibles.
-Cette attaque à été découverte par des chercheurs de Google le 3 janvier 2018, un code Common Vulnerabilities and Exposures : CVE-2017-5754 a été émis.
+Cette attaque à été découverte par des chercheurs de Google le 3 janvier 2018, un code Common Vulnerabilities and Exposures a été émis. A ce jour, on pense que la faille n'a pas été exploitée.
 
 Selon eux, il est possible que chaque processeur Intel qui implémente l’exécution dans le désordre ou l’exécution spéculative soit affecté (= tous les processeurs depuis 1995)  
 exécution dans le désordre : quand le processeur réorganise l’ordre dans lequel les instructions vont s’exécuter. Permets de mieux exploiter les ressources du processeur et de gagner du temps de calcul  
