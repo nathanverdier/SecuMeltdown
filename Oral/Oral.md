@@ -9,9 +9,9 @@ Meltdown est une vulnérabilité matérielle qui touche les processeurs Intel x8
 Elle a donc été nommée Meltdown, car elle fait fondre les barrières de sécurité qui isolant les données sensibles.
 Cette attaque à été découverte par des chercheurs de Google le 3 janvier 2018, un code Common Vulnerabilities and Exposures : CVE-2017-5754 a été émis.
 
-Selon eux, il est possible que chaque processeur Intel qui implémente l’exécution dans le désordre ou l’exécution spéculative soit affecté (= tous les processeurs depuis 1995)
-exécution dans le désordre : quand le processeur réorganise l’ordre dans lequel les instructions vont s’exécuter. Permets de mieux exploiter les ressources du processeur et de gagner du temps de calcul
-exemple : si une opération attend certaines données, au lieu de ne rien faire, le processeur lance une opération indépendante.
+Selon eux, il est possible que chaque processeur Intel qui implémente l’exécution dans le désordre ou l’exécution spéculative soit affecté (= tous les processeurs depuis 1995)  
+exécution dans le désordre : quand le processeur réorganise l’ordre dans lequel les instructions vont s’exécuter. Permets de mieux exploiter les ressources du processeur et de gagner du temps de calcul  
+exemple : si une opération attend certaines données, au lieu de ne rien faire, le processeur lance une opération indépendante.  
 Exécution spéculative : anticipation basée sur des prédictions de branchement qui vise à éviter les temps d’attente potentiels. Si la prédiction est correcte : le processeur à gagner du temps sinon il annule les opérations. Tous les processeurs utilisant le principe d’exécution spéculative peuvent être touchés.
 
 Meltdown va surtout impacter les fournisseurs de services cloud : en effet, ces derniers permettent aux utilisateurs de faire tourner leurs programmes sur les mêmes serveurs où sont stockées des données sensibles.
