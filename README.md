@@ -31,6 +31,20 @@ Nous vous recommandons de mettre à jour vos paquets Linux.
 
 Pour disposer d'un état détaillé sur la sécurité de Linux, veuillez consulter sa page de suivi de sécurité à l'adresse
 
+## Déroulement de l'attaque
+### Etape 1 : Accès aux données
+* On déplace les informations stockées dans un registre
+* Il se passe deux choses :
+  * on envoie l'instruction à l'unité dédié qui va éxécuter la commande grâce à l'exécution dans le désordre
+  * cpu il cherche à savoir si oui ou non, le processus courant à le droit d'accèder à la mémoire ciblée
+* exécuter l'étape 2 avant que le cpu lève une exception sur les droits d'accès
+### Etape 2 : transmission des données
+* On alloue un espace dans le stockage de façon à ce que aucune partie de l'espace ne soit dans la mémoire cache
+* Pour ça, si taille des pages = $(4KB), alloue un espace de $(256x4KB) > à la taille des pages
+### Etape 3 : Reception des données
+* On récupère les données en iterant sur le tableau
+### On refait jusqu'à récupérer TOUTE la mémoire
+
 ## Pratique 
 
 **Cette Partie n'est pas finit je drop juste de la théorie et des idées**
