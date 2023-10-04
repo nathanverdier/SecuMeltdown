@@ -5,7 +5,7 @@ geometry: margin=2cm
 output: pdf_document
 ---
 
-## Diapo you after Meltdown
+## Présentation rapide
 
 Nous allons commencer par une présentation rapide de l'attaque Meltdown.
 L'attaque Meltdown est une faille de sécurité informatique découverte en 2012. Cette dernière affecte les microprocesseurs et permet à l'attaquant d'accéder à des zones de la mémoire de l'ordinateur.
@@ -20,7 +20,19 @@ Cette attaque est différentes de celles que nous avons pu voir en cours car ell
 
 ## Exécution spéculative
 
-## Les 3 étapes de l'attaque 
+## Déroulement de l'attaque
+### Etape 1 : Accès aux données
+* On déplace les informations stockées dans un registre
+* Il se passe deux choses :
+  * on envoie l'instruction à l'unité dédié qui va éxécuter la commande grâce à l'exécution dans le désordre
+  * cpu il cherche à savoir si oui ou non, le processus courant à le droit d'accèder à la mémoire ciblée
+* exécuter l'étape 2 avant que le cpu lève une exception sur les droits d'accès
+### Etape 2 : transmission des données
+* On alloue un espace dans le stockage de façon à ce que aucune partie de l'espace ne soit dans la mémoire cache
+* Pour ça, si taille des pages = $(4KB), alloue un espace de $(256x4KB) > à la taille des pages
+### Etape 3 : Reception des données
+* On récupère les données en iterant sur le tableau
+### On refait jusqu'à récupérer TOUTE la mémoire
 
 ## Comment se protéger de l'attaque Meltdown
 
@@ -54,3 +66,12 @@ Cette dernière est quasiement impossible à détecter et donc il est possible q
 ## Différences entre Spectre et Meltdown
 
 Il est interressant de noter que l'attaque Meltdown repose sur Spectre pour fonctionner. 
+Spectre permet d'avoir uniquement la mémoire du cache alors que Meltdown permet l'accès à la mémoire utilisateur.
+Spectre affecte plus de processeurs car il suffit que ces derniers utilisent l'execution spéculative.
+Pour ce qui est des correctifs, Meltdown peut compter sur des correctifs matériels alors que spectre ne peut compter que sur des correctifs logiciels.
+
+## Conclusion
+
+En conclusion, nous dirons que l'attaque Meltdown est une attaque qui affecte les processeurs intel et qui permet de récupérer les données présentes dans la mémoire utilisateur. Pour marcher, il faut que l'attaquant ait des accès sur l'ordinateur.
+Des correctifs ont été mis en place pour éviter cette attaque et ils renforcent la frontière entre données du noyau et données utilisateurs.
+Vous avez peut être déjà été victime d'un attaque Meltdown sans le savoir. 
