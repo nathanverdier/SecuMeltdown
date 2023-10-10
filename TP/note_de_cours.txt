@@ -1,0 +1,27 @@
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&              Sécurité               &&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+faut pas écrire les mdps
+12 caractères
+chiffres+lettres
+pas de mots du dico => on peut les deformer
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&                Maths                 &&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+J'ai pas écouté
+je demanderai à Rayhan
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&               Anglais                &&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+animal = animal
+bird = oiseau
+dog = chien
+fish = poisson
+food = nourriture
+horse = cheval
+tail = queue
+light = lumière
+sun = soleil
+snow = neige
