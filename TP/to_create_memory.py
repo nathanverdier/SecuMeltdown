@@ -20,7 +20,7 @@ def generate_file():
     first_address = 1
 
 def convert_char_to_binary(char):
-    return format(ord(char), 'b')
+    return format(ord(char), '08b')
 
 def convert_str_to_binary(string):
     string_binary = []
@@ -39,7 +39,7 @@ def load_tab_from_file(file_name):
 
 def write_line_in_fich(fileout, address, string_content):
     string_content_binary = convert_str_to_binary(string_content)
-    fileout.write(convert_int_to_hex(address)+":"+" ".join(string_content_binary)+"\n")
+    fileout.write(convert_int_to_hex(address)+":"+"".join(string_content_binary)+"\n")
 
 def write_tab_in_fich(fileout, start_address, lines):
     next_address = start_address
