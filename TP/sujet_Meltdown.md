@@ -1,12 +1,12 @@
 # Simulation d'une attaque Meltdown
 
-Petit hacker que vous êtes devenu au fil des TP de sécurité, vous avez découvert qu'un dépôt github privé contient des images d'une star que vous adorez. Vous voulez donc les récupérer, et ce par tous les moyens.
+Petit hacker que vous êtes devenu au fil des TP de sécurité, vous avez découvert qu'un dépôt github privé contient des images d'une star que Jonathan adore. Seulement il ne veut pas vous dire de qui il s'agit, donc vous voulez le découvrir par vous même, par tout les moyens.
 
-Vous savez que l'adresse ssh du dépôt en question est `git@github.com:JonathanDu63/AbsoluteFan.git`, et vous savez que Jonathan, la personne ayant créé le dépôt, a rentré sa clé publique pour lui permettre de cloner le dépôt.
+Vous savez que l'adresse ssh du dépôt en question est `https://github.com/jonathanGrosBg/MySecretRepository.git`, et vous savez que Jonathan, la personne ayant créé le dépôt, a rentré les mots de passe de son adresse mail et de son compte github dans un fichier sur sa machine.
 
 L'idée vous vient alors de monter une attaque Meltdown sur la machine de Jonathan pour vous permettre de récupérer la mémoire de sa machine.
 
-Vous pourrez alors récupérer la clé privée de Jonathan en scannant les adresses mémoires, vous permettant de cloner le dépôt à votre tour.
+Vous pourrez alors récupérer les comptes de Jonathan en scannant les adresses mémoires, vous permettant de cloner le dépôt à votre tour.
 
 ## Comment procéder ?
 
@@ -18,10 +18,8 @@ Cependant, ce code ne permet que de récupérer les données à une **(et une se
 
 > **Attention !** Si la partie de l'l'exécution spéculative se termine avant que vous n'ayez pu récupérer les données à l'adresse voulue, vous ne récupèrerez rien, et vous manquerez peut-être la clé ssh !!! (le programme retournera alors une exeption)
 
-Une fois chose faite, vous n'aurez plus qu'à convertir le fichier binaire obtenu en ASCII, et parcourir la mémoire jusqu'à trouver la clé ssh privée de Jonathan. 
+Une fois chose faite, vous n'aurez plus qu'à convertir le fichier binaire obtenu en ASCII, et parcourir la mémoire jusqu'à trouver l'espace mémoire contenant les identifiants de Jonathan.
 
-> **Rappel** : Un fichier de clé ssh privé commence par `-----BEGIN OPENSSH PRIVATE KEY-----` et se finit par `-----END OPENSSH PRIVATE KEY-----`
-
-Une fois ceci fait, vous n'aurez plus qu'à crée votre dossier .ssh sur votre machine virtuelle, y créer un fichier de clé privée ssh et clôner le dépôt.
+Une fois ceci fait, vous n'aurez plus qu'à vous connecter à l'adresse mail de Jonathan et de vous connecter à son compte github pour récupérer et cloner le dépôt.
 
 Et voilà ! 🎉 Vous pouvez maintenant admirer les photos de votre star préférée 🙈
