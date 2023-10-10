@@ -8,6 +8,8 @@ geometry: margin=2cm
 taskset permet de crée un affiliété entre un processuce et un coeur.  
 0x1 = coeur 1 du processeur (peut être remplacer par un autre) essayer d'en utiliser un qui sert par trop au moment ou vous le faite pour évité d'avoir des données parasite.  
 Mémoire physique = 0xffff880000000000. Utile quand ont a pas désactivé kaslr.  
+Utilisateur `meltdown` mot de passe : `testMeltdown`  
+Mot de passe de root : `testMeltdown`
 
 
 ## Virtual Machine
