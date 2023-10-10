@@ -16,7 +16,7 @@ Cependant, ce code ne permet que de récupérer les données à une **(et une se
 
 > **Attention !** Si la partie de l'exécution spéculative se termine avant que vous n'ayez pu récupérer les données à l'adresse voulue, vous ne récupèrerez rien, et vous manquerez peut-être l'accès au dépôt !!! (le programme retournera alors une exeption)
 
-Pour utiliser le programme python, vous pouvez utiliser la ligne de commande: ```python3 Meltdown.py adresse``` Afin de l'utilisez dans votre programme python, nous vous conseillons de jeter un oeil à la librairie subprocess.
+Pour utiliser le programme python, vous pouvez utiliser la ligne de commande: ```python3 Meltdown.py adresse```. Afin de l'utilisez dans votre programme python, nous vous conseillons de jeter un oeil à la librairie subprocess.
 
 Une fois chose faite, vous n'aurez plus qu'à convertir le fichier binaire obtenu en ASCII, et parcourir la mémoire jusqu'à trouver l'espace mémoire contenant les identifiants de Jonathan.
 
