@@ -1,4 +1,11 @@
-# Simulation d'une attaque Meltdown
+---
+title: Simulation d'une attaque Meltdown
+author: Nathan Verdier, Chloé Mourgand, Thomas Chazot, Lucie Bedouret, Rémi Regnault
+geometry: margin=2cm
+output: pdf_document
+---
+
+# Mise en situation
 
 Petit hacker que vous êtes devenu au fil des TP de sécurité, vous avez découvert qu'un dépôt github privé contient des images d'une star que Jonathan adore. Seulement il ne veut pas vous dire de qui il s'agit, donc vous voulez le découvrir par vous même, par tout les moyens.
 
@@ -8,7 +15,7 @@ L'idée vous vient alors de monter une attaque Meltdown sur la machine de Jonath
 
 Vous pourrez alors récupérer les comptes de Jonathan en scannant les adresses mémoires, vous permettant de cloner le dépôt à votre tour.
 
-## Comment procéder ?
+# Comment procéder ?
 
 Il faut monter l'attaque Meltdown. Pour ce faire, nous vous mettons à disposition le code python suivant, qui vous permet de simuler une attaque Meltdown sur la machine de Jonathan.
 
@@ -22,4 +29,4 @@ Une fois chose faite, vous n'aurez plus qu'à convertir le fichier binaire obten
 
 Une fois ceci fait, vous n'aurez plus qu'à vous connecter à l'adresse mail de Jonathan et de vous connecter à son compte github pour récupérer et cloner le dépôt.
 
-Et voilà ! 🎉 Vous pouvez maintenant admirer les photos de votre star préférée 🙈
+Et voilà ! Vous pouvez maintenant admirer les photos de votre star préférée
