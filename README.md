@@ -56,4 +56,3 @@ désactiver le correctif nommé Kernel *Page Table Isolation* lors de l'armosage
 
 [Maintenant la pratique](TP/)
 
-
