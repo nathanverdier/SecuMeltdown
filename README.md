@@ -45,17 +45,15 @@ Pour disposer d'un état détaillé sur la sécurité de Linux, veuillez consult
 * On récupère les données en iterant sur le tableau
 ### On refait jusqu'à récupérer TOUTE la mémoire
 
+[Voir presentation](Presentation_Meltdown_Oral/)
+
 ## Pratique 
-
-**Cette Partie n'est pas finit je drop juste de la théorie et des idées**
-
-Pour faire l'attaque sur un système Linux:
 
 ### Système Linux prérequis:
 désactiver le correctif nommé Kernel *Page Table Isolation* lors de l'armosage en passant le code pti=off sur la ligne de commande du noyau.
 
 ### L'attaque !
 
-**Maintenant la prattique:**
+[Maintenant la pratique](TP/)
 
 
