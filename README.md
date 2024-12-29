@@ -1,10 +1,3 @@
----
-title: Attaque meldown cours
-author: Lucie Bedouret, Rémi Regnault, Chloé Mourgald, Thomas Chazot, Nathan Verdier
-geometry: margin=2cm
-output: pdf_document
----
-
 ![<img src="Images/Meltdown_icon.png" width="50"/>](Images/Meltdown_icon.png)
 
 ## Qu’est-ce que c'est une attaque Meltdown
